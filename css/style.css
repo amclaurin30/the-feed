@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+/* code sourced from: */ W3schools
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Caveat', cursive;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(244, 240, 243);
+    display: flex;
+}
+
+
+header {
+    text-align: center;
+    margin-top: 15%;
+}
+
+h1 {
+    font-size: 3rem; 
+}
+
+
+nav {
+    background-color: deeppink;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+main {
+    width: 65%;
+    margin-left: 30%;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: deeppink;
+    color: rgb(238, 243, 98);
+    width: 100%;
+    bottom: 0;
+}
+h2 footer{
+    text-align: center;
+}
+
+   .sidebar {
+    width: 250px;
+    background-color: rgba(234, 11, 133, 0.848);
+    padding: 20px;
+    border-right: 2px solid rgb(238, 209, 18);
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(212, 232, 57);
+}
+
+.sidebar h1 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: rgb(246, 249, 246);
+}
+
+
+.sidebar .gif {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar .gif img {
+    width: 100%; 
+}
+
+
+.sidebar .logo {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.sidebar .logo img {
+    width: 180px;
+   image-rendering: crisp-edges;
+  
+}
+
+
+.container {
+    flex-grow: 1;
+    padding: 50px 20px;
+    width: calc(100% - 250px); 
+}
+
+
+.scroll-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(234, 44, 149, 0.6);
+    border-radius: 15px;
+}
+
+.scroll-section img {
+    width: 100%;
+    border: 5px solid rgb(244, 246, 245);
+}
+
+.caption {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body  {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: 'Caveat', cursive;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.loading-page {
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.gif-container {
+    position: relative;
+    z-index: 2;
+}
+
+.gif-container img {
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid rgb(18, 91, 99);
+}
+
+.enter-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #a519a2;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+}
+
+.enter-button:hover {
+    background-color: #d316ad;
+}
